@@ -1,0 +1,20 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 style="color: red;">SuperWorks Sale !!!</h1>
+      <p class="lead" style="color: darkblue;"><strong>Grab Your Deal Now</strong></p>
+    </div>
+  </div>
+<div class="container">
+    <div class="row wrap">
+        <ng-container  *ngFor="let product of products">
+            <div class="card col-sm-4">
+                <img src="{{product.image}}" alt="" style="width: 250px;">
+                <h5>{{product.title}}</h5>
+                <p>{{product.description}}</p>
+                <h5><strong>Price :</strong>${{product.price}}</h5><br>
+                <button (click)=addToCart(product) class="btn btn-primary mb-2" >Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>

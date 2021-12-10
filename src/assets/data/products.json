@@ -1,0 +1,39 @@
+{
+    "products": [
+      {
+        "id": "001",
+        "title": "Mens Running Shoes",
+        "price": 22,
+        "image": "/assets/shoes2.jpg",
+        "description": "This is a wider card with supporting text below."
+      },
+      {
+        "id": "002",
+        "title": "Nike Air Sneakers",
+        "price": 15,
+        "image": "/assets/shoes3.jpeg",
+        "description": "This is a wider card with supporting text below."
+     },
+      {
+        "id": "003",
+        "title": "Mens Casual shoes",
+        "price": 11,
+        "image": "/assets/shoes4.jpg",
+        "description": "This is a wider card with supporting text below."
+      },
+      {
+        "id": "004",
+        "title": "Loafers",
+        "price": 24,
+        "image": "/assets/shoes5.jpeg",
+        "description": "This is a wider card with supporting text below."
+    },
+     {
+        "id": "005",
+        "title": "Mens Formal Shoes",
+        "price": 41,
+        "image": "/assets/shoes6.jpeg",
+        "description": "This is a wider card with supporting text below." 
+    }
+    ]
+  }

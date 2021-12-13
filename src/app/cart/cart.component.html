@@ -24,11 +24,17 @@
                                 <button (click)=removeItem(item) class="btn btn-danger">Remove</button>
                             </td>
                         </tr>
-                    </tbody>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td><button (click)="emptycart()" class="btn btn-warning">EmptyCart</button></td>
+                            <td><button routerLink="/products" class="btn btn-primary">ShopMore</button></td>
+                            <td><button class="btn btn-success">Checkout</button></td>
+                            <td><strong>Grand Total : {{tot}}</strong></td>
+                        </tr>
+                    </tbody>                    
                 </table>
             </div>
         </div>
-        <label>Total : {{tot}}</label>
     </div>
 </ng-container>
 
@@ -37,7 +43,6 @@
     <div class="container">
        
         <div class="center">
-            <img src="" alt="">
             <h4>Your cart is empty!</h4>
             <button routerLink="/products" class="btn btn-primary">Go Back</button>
         </div>

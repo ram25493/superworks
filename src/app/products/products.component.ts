@@ -11,6 +11,7 @@ import { ProductService } from '../product.service';
 export class ProductsComponent implements OnInit {
 
   public products:any;
+  itemExists: number[] = [];
 
   constructor(private prod:ProductService , private cartservice:CartService) { }
 
@@ -26,6 +27,9 @@ export class ProductsComponent implements OnInit {
 
   addToCart(item : any){
     this.cartservice.addToCart(item);
+    if (item.id && !this.itemExists.includes(this.products.id)) {
+      this.itemExists.push(item.id);
+  }
   }
 
 }

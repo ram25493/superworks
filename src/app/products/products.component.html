@@ -12,7 +12,7 @@
                 <h5>{{product.title}}</h5>
                 <p>{{product.description}}</p>
                 <h5><strong>Price :</strong>${{product.price}}</h5><br>
-                <button (click)=addToCart(product) class="btn btn-primary mb-2">Add to cart</button>
+                <button (click)=addToCart(product) class="btn btn-primary mb-2" [disabled]="itemExists.includes(product.id)">Add to cart</button>
             </div>
         </ng-container>
 

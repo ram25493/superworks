@@ -20,7 +20,7 @@ export class CartComponent implements OnInit {
     
   }
 
-  getCart(): void{
+  getCart(){
     this.cartservice.getproduct().subscribe(res =>{
       this.product = res;
       this.tot =this.product.map((item : any) => item.price).reduce((prev:any, next:any) => prev + next);

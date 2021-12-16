@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 import { CartService } from '../cart/cart.service';
 import { ProductService } from '../product.service';
 
